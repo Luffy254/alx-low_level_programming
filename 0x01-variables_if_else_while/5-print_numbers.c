@@ -8,12 +8,13 @@
 
 int main(void)
 {
-	int i;
+	char i = '0';
 
-	for (i = 0; i < 10; i++)
+	while (i < '10')
 	{
-		printf("%d", i);
-		printf("\n")
+		putchar(i);
+		i++;
 	}
+	putchar('\n');
 	return (0);
 }
