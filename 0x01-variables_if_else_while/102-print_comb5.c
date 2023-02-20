@@ -10,29 +10,21 @@
 int main(void)
 {
 	int i = 0;
-	int f_d;
-	int l_d;
 	int j;
-	int f_d2;
-	int l_d2;
 
-	while (i <= 98)
+	while (i < 100)
 	{
-		f_d = (i / 10 + '0');
-		l_d = (i % 10 + '0');
 		j = 0;
-		while (j <= 99)
+		while (j < 100)
 		{
-			f_d2 = (j / 10 + '0');
-			l_d2 = (j / 10 + '0');
 			if (i < j && i != j)
 			{
-				putchar(f_d);
-				putchar(l_d);
+				putchar(i / 10 + '0');
+				putchar(j % 10 + '0');
 				putchar(' ');
-				putchar(f_d2);
-				putchar(l_d2);
-				if (i != 98)
+				putchar(j / 10 + '0');
+				putchar(i % 10 + '0');
+				if (j != 99 || i != 98)
 				{
 					putchar(',');
 					putchar(' ');
