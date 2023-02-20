@@ -25,7 +25,7 @@ int main(void)
 		{
 			f_d2 = (j / 10 + '0');
 			l_d2 = (j / 10 + '0');
-			if (i < j)
+			if (i < j && i != j)
 			{
 				putchar(f_d);
 				putchar(l_d);
