@@ -1,5 +1,5 @@
 #include "main.h"
-int helper(int n, int i);
+int actual_sqrt_recursion(int n, int i);
 
 /**
  * _sqrt_recursion - returns squareroot of a number
@@ -15,18 +15,18 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (helper(n, 0));
+		return (actual_sqrt_recursion(n, 0));
 	}
 }
 
 /**
- * helper - recurses to find the natural squareroot
+ * actual_sqrt_recursion - recurses to find the natural squareroot
  * @n: number to return squareroot
  * @i: iterator
  *
  * Return: the squareroot
  */
-int helper(int n, int i)
+int actual_sqrt_recursion(int n, int i)
 {
 	if (i * i > n)
 	{
@@ -38,6 +38,6 @@ int helper(int n, int i)
 	}
 	else
 	{
-		return (helper(n, i + 1));
+		return (actual_sqrt_recursion(n, i + 1));
 	}
 }
