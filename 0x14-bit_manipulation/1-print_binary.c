@@ -32,4 +32,7 @@ void print_binary(unsigned long int n)
 
 		len_n--;
 	}
+
+	if (count == 0)
+		_putchar('0');
 }
