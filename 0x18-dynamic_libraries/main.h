@@ -28,5 +28,6 @@ int sub(int a, int b);
 int mul(int a, int b);
 int div(int a, int b);
 int mod(int a, int b);
+int check_win(int n1, int n2, int n3, int n4, int n5, int bonus);
 
 #endif
